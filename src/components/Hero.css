@@ -1,0 +1,101 @@
+.hero-section {
+  position: relative;
+  background-color: #1f2835; /* gray-900 */
+  color: white;
+  padding-top: 8rem; /* pt-32 */
+  padding-bottom: 5rem; /* pb-20 */
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 10rem; /* md:pt-40 */
+    padding-bottom: 7rem; /* md:pb-28 */
+  }
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.hero-container {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 10;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 42rem; /* max-w-2xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 2.25rem; /* text-4xl */
+  line-height: 1.2;
+  color: rgb(221, 200, 200);
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem; 
+  
+  }
+}
+
+.hero-description {
+  font-size: 1.25rem; /* text-xl */
+  margin-bottom: 2rem; /* mb-8 */
+  
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero-buttons {
+    flex-direction: row;
+  }
+}
+
+.btn {
+  font-weight: 700;
+  padding: 0.75rem 1.5rem; /* py-3 px-6 */
+  border-radius: 0.5rem; /* rounded-lg */
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.btn-orange {
+  background-color: #ea580c; /* orange-600 */
+}
+
+.btn-orange:hover {
+  background-color: #c2410c; /* orange-700 */
+}
+
+.btn-blue {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.btn-blue:hover {
+  background-color: #1e40af; /* blue-800 */
+}

@@ -1,0 +1,88 @@
+/* Base Styles */
+.services-section {
+  padding: 5rem 1.5rem;
+  background-color: #c1d8ee; /* light gray */
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.services-heading {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #1e3a8a; /* stronger blue */
+  margin-bottom: 3.5rem;
+  letter-spacing: -0.5px;
+}
+
+@media (min-width: 768px) {
+  .services-heading {
+    font-size: 2.5rem;
+  }
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Card Styles */
+.service-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  border: 1px solid #e5e7eb; /* subtle border */
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Styles */
+.service-icon {
+  margin-bottom: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.icon-orange {
+  color: #ea580c; /* orange-600 */
+}
+
+/* Title & Description */
+.service-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.service-description {
+  font-size: 0.975rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
