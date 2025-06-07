@@ -1,0 +1,150 @@
+/* Global Page Styles */
+.services-page {
+  background-color: #f3f3f3;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page Header Titles */
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f1111;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #565959;
+}
+
+/* Service Card Layout */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* Each Service Card */
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Section */
+.service-image-container {
+  background-color: #fafafa;
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.service-image {
+  width: 100%;
+  max-width: 180px;
+  object-fit: contain;
+  margin: 0 auto 12px auto;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  
+  font-weight: 600;
+  color: #0f1111;
+}
+
+/* Content Section */
+.service-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* List Title */
+.service-includes-title {
+  font-size: 1rem;
+  
+  font-weight: 700;
+  color: #0f1111;
+  margin-top: 8px;
+}
+
+/* Detail List */
+.service-details {
+  padding-left: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.service-detail-item {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.checkmark {
+  color: #ff9900;
+  font-weight: bold;
+  margin-right: 6px;
+  font-size: 1rem;
+}
+
+.detail-text {
+  color: #111;
+}
+
+/* Book Button */
+.book-btn {
+  align-self: flex-start;
+  background-color: #ffa41c;
+  color: #0f1111;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid #a88734;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.book-btn:hover {
+  background-color: #f08804;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    margin-top: 6rem;
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .service-title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+}

@@ -1,42 +1,139 @@
-#root {
-  max-width: 1280px;
+/* ======= Root Variables ======= */
+:root {
+  --primary-color: #0056b3;
+  --secondary-color: #003366;
+  --accent-color: #ff6b00;
+  --accent-hover: #e05d00;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --gray-color: #6c757d;
+
+  --radius: 10px;
+  --transition: all 0.3s ease-in-out;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= Global Reset ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ======= Reusable Classes ======= */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+}
+
+/* ======= Section Styling ======= */
+section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: var(--accent-color);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* ======= Typography ======= */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-color);
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--gray-color);
+}
+
+/* ======= Utility ======= */
+.text-center {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.text-primary {
+  color: var(--primary-color);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.text-accent {
+  color: var(--accent-color);
+}
+
+.bg-light {
+  background-color: var(--light-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 20px;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
