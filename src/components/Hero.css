@@ -1,105 +1,166 @@
-.hero-section {
-  position: relative;
-  background: linear-gradient(135deg, 
+/* background: linear-gradient(135deg, 
   rgba(30, 58, 138, 1) 0%, 
   rgb(240, 146, 78) 50%, 
-  rgb(239, 189, 189) 100%);
+  rgb(239, 189, 189) 100%); */
 
-  color: white;
-  padding-top: 8rem; /* pt-32 */
-  padding-bottom: 5rem; /* pb-20 */
-}
-
-@media (min-width: 768px) {
-  .hero-section {
-    padding-top: 10rem; /* md:pt-40 */
-    padding-bottom: 7rem; /* md:pb-28 */
-  }
+/* Base Styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .hero-overlay {
   position: absolute;
-  inset: 0;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .hero-container {
   position: relative;
-  max-width: 1280px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  z-index: 10;
-  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
 }
 
-.hero-content {
-  max-width: 42rem; /* max-w-2xl */
-  margin-left: auto;
-  margin-right: auto;
+/* Left Content */
+.hero-left {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  color: white;
 }
 
 .hero-title {
+  font-size: 2.5rem;
   font-weight: 700;
-  font-size: 2.25rem; /* text-4xl */
   line-height: 1.2;
-  color: rgb(221, 200, 200);
-  margin-bottom: 1.5rem; /* mb-6 */
-}
-
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 3rem; 
-  
-  }
+  color :#bcd3eb;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(57, 30, 30, 0.3);
 }
 
 .hero-description {
-  font-size: 1.25rem; /* text-xl */
-  margin-bottom: 2rem; /* mb-8 */
-  
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  color :#fbfcfd;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Buttons */
 .hero-buttons {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-}
-
-@media (min-width: 640px) {
-  .hero-buttons {
-    flex-direction: row;
-  }
+  margin-top: 2rem;
 }
 
 .btn {
-  font-weight: 700;
-  padding: 0.75rem 1.5rem; /* py-3 px-6 */
-  border-radius: 0.5rem; /* rounded-lg */
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
   display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
   text-align: center;
-  -webkit-user-select: none;
-  user-select: none;
+  min-width: 180px;
 }
 
 .btn-orange {
-  background-color: #ea580c; /* orange-600 */
+  background-color: #f97316; /* Orange color */
+  color: white;
+  border: 2px solid #f97316;
 }
 
 .btn-orange:hover {
-  background-color: #c2410c; /* orange-700 */
+  background-color: #ea580c; /* Darker orange */
+  border-color: #ea580c;
+  transform: translateY(-2px);
 }
 
 .btn-blue {
-  background-color: #1d4ed8; /* blue-700 */
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
 }
 
 .btn-blue:hover {
-  background-color: #1e40af; /* blue-800 */
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Right Image */
+.hero-right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Background Image (set via inline style or another method) */
+.hero-section {
+  background-image: url('../assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    padding: 4rem 2rem;
+  }
+
+  .hero-left {
+    width: 55%;
+    text-align: left;
+    padding-right: 3rem;
+  }
+
+  .hero-right {
+    width: 45%;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.3rem;
+  }
 }

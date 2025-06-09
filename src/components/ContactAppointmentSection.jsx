@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   FaMapMarkerAlt,
   FaPhone,
@@ -11,10 +10,11 @@ import './ContactAppointmentSection.css';
 
 const ContactAppointmentSection = () => {
   return (
-    <section className="contact-appointment-section">
+    <section id="contact" className="contact-appointment-section">
       <div className="contact-container">
         <h2 className="contact-heading">Contact & Book Appointment</h2>
         <div className="contact-grid">
+
           {/* Contact Info */}
           <div className="contact-info">
             <h3 className="contact-subheading">Get In Touch</h3>

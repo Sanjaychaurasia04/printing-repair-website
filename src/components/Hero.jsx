@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../assets/hero.jpg'; // Replace with your image name
+import hero from '../assets/hero.jpg'; 
 import { Link } from 'react-router-dom';
 import './Hero.css';
 
@@ -22,9 +22,10 @@ const Hero = () => {
             <Link to="/services" className="btn btn-orange">
               Our Services
             </Link>
-            <Link to="/contact" className="btn btn-blue">
+            <a href="#contact" className="btn btn-blue">
               Contact Us
-            </Link>
+            </a>
+
           </div>
         </div>
 
