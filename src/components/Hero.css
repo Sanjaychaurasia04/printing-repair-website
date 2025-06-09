@@ -1,6 +1,10 @@
 .hero-section {
   position: relative;
-  background-color: #1f2835; /* gray-900 */
+  background: linear-gradient(135deg, 
+  rgba(30, 58, 138, 1) 0%, 
+  rgb(240, 146, 78) 50%, 
+  rgb(239, 189, 189) 100%);
+
   color: white;
   padding-top: 8rem; /* pt-32 */
   padding-bottom: 5rem; /* pb-20 */

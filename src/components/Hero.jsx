@@ -1,13 +1,16 @@
 import React from 'react';
+import hero from '../assets/hero.jpg'; // Replace with your image name
 import { Link } from 'react-router-dom';
 import './Hero.css';
+
 
 const Hero = () => {
   return (
     <section className="hero-section">
       <div className="hero-overlay"></div>
       <div className="hero-container">
-        <div className="hero-content">
+        {/* LEFT: Text Content */}
+        <div className="hero-left">
           <h1 className="hero-title">
             Expert Heidelberg & Printing Machine Repairs in India
           </h1>
@@ -19,10 +22,15 @@ const Hero = () => {
             <Link to="/services" className="btn btn-orange">
               Our Services
             </Link>
-            <a href="#appointment" className="btn btn-blue">
-              Book Appointment
-            </a>
+            <Link to="/contact" className="btn btn-blue">
+              Contact Us
+            </Link>
           </div>
+        </div>
+
+        {/* RIGHT: Image */}
+        <div className="hero-right">
+          <img src={hero} alt="Printing Machine Service" className="hero-image" />
         </div>
       </div>
     </section>
