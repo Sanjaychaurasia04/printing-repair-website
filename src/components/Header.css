@@ -1,12 +1,9 @@
-/* Header.css */
-
-/* Base styles */
 .header {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: #ffffff;
+  background: #dad2ed;
   padding: 1.5rem 2rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-sizing: border-box;

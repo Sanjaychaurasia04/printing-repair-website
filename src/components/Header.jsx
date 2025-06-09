@@ -33,7 +33,7 @@ const Header = () => {
           </ul>
           <div className="phone-contact">
             <FaPhone className="phone-icon" />
-            <a href="tel:+919310109620" className="phone-number">+91 12345 67890</a>
+            <a href="tel:+919310109620" className="phone-number">+91 93101 09620</a>
           </div>
         </nav>
 

@@ -1,16 +1,15 @@
-/* background: linear-gradient(135deg, 
-  rgba(30, 58, 138, 1) 0%, 
-  rgb(240, 146, 78) 50%, 
-  rgb(239, 189, 189) 100%); */
-
-/* Base Styles */
 .hero-section {
   position: relative;
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
+  background-image: url('../assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero-overlay {
@@ -19,23 +18,27 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(30, 58, 138, 0.85) 0%,
+    rgba(249, 115, 22, 0.7) 100%
+  );
   z-index: 1;
 }
 
 .hero-container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
 }
 
-/* Left Content */
+/* Left Content - Enhanced Typography */
 .hero-left {
   width: 100%;
   padding: 2rem 0;
@@ -44,123 +47,204 @@
 }
 
 .hero-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color :#bcd3eb;
-  margin-bottom: 1.5rem;
-  text-shadow: 1px 1px 3px rgba(57, 30, 30, 0.3);
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 1.8rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.5px;
 }
 
 .hero-description {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
   max-width: 700px;
-  color :#fbfcfd;
+  color: #e6f0ff;
   margin-left: auto;
   margin-right: auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
 }
 
-/* Buttons */
+/* Buttons - Modern Styling */
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 .btn {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-align: center;
-  min-width: 180px;
+  min-width: 200px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .btn-orange {
-  background-color: #f97316; /* Orange color */
+  background-color: #f97316;
   color: white;
   border: 2px solid #f97316;
 }
 
 .btn-orange:hover {
-  background-color: #ea580c; /* Darker orange */
-  border-color: #ea580c;
-  transform: translateY(-2px);
+  background-color: #e04b00;
+  border-color: #e04b00;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(233, 86, 11, 0.4);
 }
 
 .btn-blue {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.15);
   color: white;
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .btn-blue:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
 }
 
-/* Right Image */
+/* Right Image - Enhanced Styling */
 .hero-right {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  perspective: 1000px;
 }
 
 .hero-image {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  transform-style: preserve-3d;
+  transform: rotateY(-5deg) rotateX(2deg);
+  border: 8px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.5s ease;
 }
 
-/* Background Image (set via inline style or another method) */
-.hero-section {
-  background-image: url('../assets/hero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.hero-right:hover .hero-image {
+  transform: rotateY(0deg) rotateX(0deg);
 }
 
-/* Responsive Design */
+/* Responsive Design - Enhanced Breakpoints */
 @media (min-width: 768px) {
   .hero-container {
     flex-direction: row;
-    padding: 4rem 2rem;
+    padding: 6rem 3rem;
+    align-items: center;
   }
 
   .hero-left {
     width: 55%;
     text-align: left;
-    padding-right: 3rem;
+    padding-right: 4rem;
   }
 
   .hero-right {
     width: 45%;
   }
 
-  .hero-buttons {
-    justify-content: flex-start;
+  .hero-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
   }
 
-  .hero-title {
-    font-size: 3rem;
+  .hero-description {
+    font-size: 1.35rem;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
   }
 }
 
 @media (min-width: 992px) {
   .hero-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    letter-spacing: -1px;
   }
 
   .hero-description {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  .btn {
+    padding: 1.1rem 3rem;
+    font-size: 1.15rem;
+  }
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-left {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-right {
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+/* Micro-interactions */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.btn:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(20, 20);
+    opacity: 0;
   }
 }
