@@ -7,6 +7,7 @@ import AppointmentForm from '../components/Appointment';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import ContactAppointmentSection from '../components/ContactAppointmentSection';
 
 const Home = () => {
   return (
@@ -16,9 +17,10 @@ const Home = () => {
         <Hero />
         <Services />
         <Gallery />
-        <AppointmentForm />
+        {/* <AppointmentForm /> */}
         <Testimonials />
-        <Contact />
+        <ContactAppointmentSection />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>
