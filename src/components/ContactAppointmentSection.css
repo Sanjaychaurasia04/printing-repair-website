@@ -1,146 +1,130 @@
-/* Container */
-.contact-section {
-  padding: 4rem 1rem;
-  background-color: #2d59b1; /* light gray */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+/* ContactAppointmentSection.css */
+
+/* Section */
+.contact-appointment-section {
+  padding: 80px 20px;
+  background-color: #f1f5f9;
+  font-family: Arial, sans-serif;
 }
 
-.container {
-  max-width: 1100px;
+/* Container */
+.contact-container {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Section Title */
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1e40af; /* dark blue */
+/* Heading */
+.contact-heading {
   text-align: center;
-  margin-bottom: 3rem;
+  font-size: 36px;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 50px;
 }
 
-/* Grid Layout */
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+/* Grid layout */
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-@media (max-width: 768px) {
-  .content-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Contact Info Card */
-.contact-info-card {
-  background-color: #fff;
-  padding: 2rem 2.5rem;
+/* Left contact info */
+.contact-info {
+  flex: 1 1 500px;
+  background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 
-.card-title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #1e3a8a; /* blue */
-  margin-bottom: 2rem;
+/* Subheading */
+.contact-subheading {
+  font-size: 24px;
+  color: #1e40af;
+  margin-bottom: 30px;
 }
 
-/* Info Items */
-.info-item {
+/* Each contact item */
+.contact-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1.8rem;
+  margin-bottom: 20px;
 }
 
-.icon {
-  font-size: 1.5rem;
-  color: #f97316; /* orange */
-  margin-right: 1.2rem;
-  margin-top: 0.3rem;
+.contact-icon {
+  color: #f97316;
+  font-size: 22px;
+  margin-right: 15px;
+  margin-top: 4px;
 }
 
-.info-title {
+.contact-label {
   font-weight: 600;
-  color: #1f2937; /* gray-800 */
-  margin-bottom: 0.3rem;
-  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 5px;
 }
 
-.info-text {
-  font-size: 1rem;
-  color: #4b5563; /* gray-600 */
-  line-height: 1.5;
+.contact-text {
+  color: #475569;
+  font-size: 15px;
 }
 
-.link {
-  color: #f97316; /* orange */
+.contact-text a {
+  color: #2563eb;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-.link:hover {
-  color: #d97706; /* darker orange */
+.contact-text a:hover {
+  color: #ea580c;
   text-decoration: underline;
 }
 
-/* WhatsApp Card */
-.whatsapp-card {
-  background-color: #1e40af; /* dark blue */
+/* WhatsApp section */
+.whatsapp-section {
+  flex: 1 1 500px;
+  background-color: #cad1e6;
   color: white;
-  padding: 2.5rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-.whatsapp-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.whatsapp-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .whatsapp-text {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  max-width: 320px;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
+/* WhatsApp button */
 .whatsapp-button {
+  background-color: #22c55e;
+  color: white;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
   display: inline-flex;
   align-items: center;
-  background-color: #22c55e; /* green-500 */
-  padding: 1rem 2rem;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: white;
-  border-radius: 10px;
+  justify-content: center;
+  gap: 10px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .whatsapp-button:hover {
-  background-color: #16a34a; /* green-600 */
+  background-color: #16a34a;
 }
 
 .whatsapp-icon {
-  margin-right: 0.8rem;
-  font-size: 1.8rem;
-}
-
-/* Responsive tweak for smaller devices */
-@media (max-width: 480px) {
-  .section-title {
-    font-size: 2rem;
-  }
-  .whatsapp-button {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-  }
+  font-size: 22px;
 }
