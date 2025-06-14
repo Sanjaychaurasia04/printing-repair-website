@@ -60,7 +60,7 @@ npm package manager
 Clone the repository
 
 
-git clone https://github.com/sanjaychaurasia04/printing-machine-repair.git
+git clone [https://github.com/sanjaychaurasia04/printing-machine-repair](https://github.com/Sanjaychaurasia04/printing-repair-website).git
 
 
 ```cd project```
