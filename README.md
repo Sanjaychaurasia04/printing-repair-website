@@ -74,3 +74,58 @@ Run the development server
 
 
 ```npm run dev```
+
+Open in browser
+Visit: [http://localhost:3000](http://localhost:5173/)
+
+## 📂 Project Structure
+<pre>
+printing-repair-website/
+├── public/                  # Static files
+│   ├── index.html 
+│   ├── assets/              # Images, fonts, etc. 
+│   │   ├── img1.jpg 
+│   │   ├── img2.jpg 
+│   │   └── ...
+│
+├── src/
+│   ├── components/          # Reusable components
+│   │   ├── ContactAppointmentSection/
+│   │   │   ├── ContactAppointmentSection.jsx
+│   │   │   └── ContactAppointmentSection.css
+│   │   ├── Header/
+│   │   ├── Footer/
+│   │   └── ...
+│
+│   ├── pages/               # Page components
+│   │   ├── Home.jsx
+│   │   ├── Services.jsx
+│   │   └── ...
+│
+│   ├── App.js               # Main app component
+│   ├── App.css
+│   ├── index.js             # Entry point
+│   └── index.css
+│
+├── package.json
+└── README.md
+</pre>
+
+## 🎨 Design & Styling
+Pure CSS3 used for layout, styling, and responsiveness
+
+Media queries for adapting to various screen sizes
+
+Hover effects and transitions for interactive UI components
+
+Modular CSS architecture with component-based styling
+
+## 📜 License
+Licensed under the MIT License – feel free to use, modify, and share this project.
+
+## 📬 Contact
+For queries or support:
+
+📧 Email: your-sanjaychaurasi22@gmail.com
+
+🌐 Website: 
