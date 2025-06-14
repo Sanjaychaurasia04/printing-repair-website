@@ -17,16 +17,16 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-##🛠️ Printing Machine Repair Services - Project Documentation
+## 🛠️ Printing Machine Repair Services - Project Documentation
 
 
-#📌 Overview
+### 📌 Overview
 
 This project is a professional website for a printing machine repair service company, specializing in Heidelberg and other major printing press repairs, maintenance, and optimization. The platform highlights available services, showcases a gallery, displays client testimonials, and includes a booking system for service inquiries.
 
 Built using React.js, CSS3, and modern frontend development practices, it offers a smooth, responsive, and engaging user experience.
 
-##✨ Features
+## ✨ Features
 ✅ Service Catalog – Overview of offered repair and maintenance services
 
 ✅ Image Gallery – Interactive gallery with modal previews
@@ -38,3 +38,39 @@ Built using React.js, CSS3, and modern frontend development practices, it offers
 ✅ Animated UI – Subtle CSS transitions and hover effects
 
 ✅ Contact & Booking – Simple form for users to request services
+
+## 🛠️ Technologies Used
+| **Category**   | **Technologies**           |
+| -------------- | -------------------------- |
+| **Frontend**   | React.js                   |
+| **Styling**    | CSS3, Responsive Design    |
+| **Icons**      | React Icons (Font Awesome) |
+| **Routing**    | React Router DOM           |
+| **Build Tool** | Vite                       |
+
+## 🚀 Installation & Setup
+Prerequisites
+
+
+Node.js (v16 or above)
+
+npm package manager
+
+### Steps to Run Locally
+Clone the repository
+
+
+git clone https://github.com/sanjaychaurasia04/printing-machine-repair.git
+
+
+```cd project```
+
+### Install dependencies
+
+```npm install```
+
+
+Run the development server
+
+
+```npm run dev```
