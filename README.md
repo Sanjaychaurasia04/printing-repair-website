@@ -1,4 +1,4 @@
-# React + Vite
+<!-- # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -10,3 +10,31 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+ -->
+
+
+
+##🛠️ Printing Machine Repair Services - Project Documentation
+
+
+#📌 Overview
+
+This project is a professional website for a printing machine repair service company, specializing in Heidelberg and other major printing press repairs, maintenance, and optimization. The platform highlights available services, showcases a gallery, displays client testimonials, and includes a booking system for service inquiries.
+
+Built using React.js, CSS3, and modern frontend development practices, it offers a smooth, responsive, and engaging user experience.
+
+##✨ Features
+✅ Service Catalog – Overview of offered repair and maintenance services
+
+✅ Image Gallery – Interactive gallery with modal previews
+
+✅ Client Testimonials – Customer reviews with star ratings
+
+✅ Responsive Layout – Fully optimized for mobile, tablet, and desktop
+
+✅ Animated UI – Subtle CSS transitions and hover effects
+
+✅ Contact & Booking – Simple form for users to request services
