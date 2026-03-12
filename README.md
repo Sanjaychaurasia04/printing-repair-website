@@ -1,21 +1,21 @@
 
 
-## 🛠️ Printing Machine Repair Services - Project Documentation
+##  Printing Machine Repair Services - Project Documentation
 
 
-### 📌 Overview
+###  Overview
 
 This project is a professional website for a printing machine repair service company, specializing in Heidelberg and other major printing press repairs, maintenance, and optimization. The platform highlights available services, showcases a gallery, displays client testimonials, and includes a booking system for service inquiries.
 
 Built using React.js, CSS3, and modern frontend development practices, it offers a smooth, responsive, and engaging user experience.
 
 
-## 🌐 Live Demo
-🖥️ You can view the live website here:
+##  Live Demo
+ You can view the live website here:
 
 🔗 https://printing-repair-website.vercel.app/
 
-## ✨ Features
+##  Features
 ✅ Service Catalog – Overview of offered repair and maintenance services
 
 ✅ Image Gallery – Interactive gallery with modal previews
@@ -28,7 +28,7 @@ Built using React.js, CSS3, and modern frontend development practices, it offers
 
 ✅ Contact & Booking – Simple form for users to request services
 
-## 🛠️ Technologies Used
+##  Technologies Used
 | **Category**   | **Technologies**           |
 | -------------- | -------------------------- |
 | **Frontend**   | React.js                   |
@@ -37,7 +37,7 @@ Built using React.js, CSS3, and modern frontend development practices, it offers
 | **Routing**    | React Router DOM           |
 | **Build Tool** | Vite                       |
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 Prerequisites
 
 
@@ -49,7 +49,7 @@ npm package manager
 Clone the repository
 
 
-git clone [[https://github.com/sanjaychaurasia04/printing-machine-repair](https://github.com/Sanjaychaurasia04/printing-repair-website).git](https://github.com/Sanjaychaurasia04/printing-repair-website.git)
+git clone [https://github.com/sanjaychaurasia04/printing-machine-repair.git]
 
 
 ```cd project```
@@ -67,7 +67,7 @@ Run the development server
 Open in browser
 Visit: [http://localhost:3000](http://localhost:5173/)
 
-## 📂 Project Structure
+##  Project Structure
 <pre>
 printing-repair-website/
 ├── public/                  # Static files
@@ -100,7 +100,7 @@ printing-repair-website/
 └── README.md
 </pre>
 
-## 🎨 Design & Styling
+##  Design & Styling
 Pure CSS3 used for layout, styling, and responsiveness
 
 Media queries for adapting to various screen sizes
@@ -109,12 +109,12 @@ Hover effects and transitions for interactive UI components
 
 Modular CSS architecture with component-based styling
 
-## 📜 License
+##  License
 Licensed under the MIT License – feel free to use, modify, and share this project.
 
-## 📬 Contact
+## Contact
 For queries or support:
 
-📧 Email: your-sanjaychaurasi22@gmail.com
+ Email: your-sanjaychaurasi22@gmail.com
 
-🌐 Website: 
+ Website: https://printing-repair-website.vercel.app/
